@@ -1,0 +1,83 @@
+theme = "modus_vivendi"
+
+[editor]
+line-number = "relative"
+mouse = false
+gutters = ["diagnostics", "spacer", "diff"]
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# At most one section each of 'keys.normal', 'keys.insert' and 'keys.select'
+[keys.normal]
+n = "move_char_left"
+e = "move_visual_line_down"
+u = "move_visual_line_up"
+i = "move_char_right"
+
+t = "insert_mode"
+T ="insert_at_line_start"
+
+l = "undo"
+L = "redo"
+
+p = "replace"
+P = "replace_with_yanked"
+
+g = "find_till_char"
+G = "till_prev_char"
+
+f = "move_next_word_end"
+F = "move_next_long_word_end"
+
+j="search_next"
+J="search_prev"
+
+# Unchanged
+
+# f = "find_next_char"
+# F = "find_prev_char"
+
+o="open_below"
+O="open_above"
+
+"A-." = "repeat_last_motion"
+
+w = "move_next_word_start"
+W = "move_next_long_word_start"
+
+b = "move_prev_word_start"
+B = "move_prev_long_word_start"
+
+[keys.normal.space.w]
+n="jump_view_left"
+e="jump_view_down"
+u="jump_view_up"
+i="jump_view_right"
+
+[keys.select]
+n="extend_char_left"
+e="extend_line_down"
+u="extend_line_up"
+i="extend_char_right"
+
+t="insert_mode"
+T="insert_at_line_start"
+
+o="open_below"
+O="open_above"
+
+g = "find_till_char"
+G = "till_prev_char"
+
+f = "move_next_word_end"
+F = "move_next_long_word_end"
+
+j="search_next"
+J="search_prev"
+
+
+[keys.insert]
+"A-space" = "normal_mode"

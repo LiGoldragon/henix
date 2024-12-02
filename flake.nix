@@ -1,5 +1,5 @@
 {
-  description = "Henix - Nix-empowered Helix editor";
+  description = "Henix - Modified Helix editor";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
